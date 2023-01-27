@@ -5,6 +5,8 @@
 	"author": "badosz0 <m@badosz.com>",
 	"main": "src/index.js",
 	"scripts": {
+		"prestart": "npm run register",
+		"start": "npm run bot",
 		"register": "node scripts/register.js",
 		"bot": "node src/index.js",
 		"prettier": "prettier --write \"**/*.js\""

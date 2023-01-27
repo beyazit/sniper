@@ -7,7 +7,6 @@ const client = new Client({
 	],
 	partials: ["MESSAGE", "REACTION", "USER"],
 });
-const { token } = require("../config.json");
 const Paginator = require("./paginator");
 
 const snipes = {};
@@ -140,4 +139,4 @@ client.on("interactionCreate", async (interaction) => {
 	}
 });
 
-client.login(token);
+client.login(process.env.TOKEN);
